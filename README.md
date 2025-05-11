@@ -1,12 +1,41 @@
-# React + Vite
+# Device Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Device Manager** is a system that allows users to manage device data with core features such as **user registration**, **login**, and **device management**. Devices can be added manually or imported from a CSV file.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔐 Demo Account
 
-## Expanding the ESLint configuration
+You can use the following credentials to test the system:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Username**: `user`
+- **Password**: `user12345678`
+
+---
+
+## 🔧 Features
+
+### 1. **User Registration**
+- Users can create a new account with the following rules:
+  - **Username** must be unique (no duplicates allowed)
+  - **Password** must be at least 8 characters long
+- Passwords are **hashed using Bcrypt** before being stored in the database
+
+### 2. **User Login**
+- After successful login, users will receive a **JWT Token**
+- This token is required to access the device management page and protected API endpoints
+
+### 3. **Device Management**
+- Accessible only after logging in
+- Devices can be added in two ways:
+  - Manually via a form
+  - Imported from a **CSV file**
+
+---
+
+## ⚙️ Project Setup
+
+### 1. Install dependencies
+
+```bash
+npm install
