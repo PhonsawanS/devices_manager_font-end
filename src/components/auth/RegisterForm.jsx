@@ -5,7 +5,7 @@ import axios from 'axios';
 import config from '../../config/config';
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
-import '../../app.css';
+import '../../App.css';
 
 const RegisterForm = () => {
   const [showPassword, setShowPassword] = useState(false);

@@ -3,7 +3,7 @@ import { MdClose } from 'react-icons/md';
 import Papa from 'papaparse';
 import config from '../../config/config'
 import Swal from 'sweetalert2';
-import '../../app.css';
+import '../../App.css';
 import axios from 'axios';
 
 
