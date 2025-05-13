@@ -4,11 +4,19 @@
 
 ---
 
+## 🔗 Live Demo
+
+👉 Try it here: [https://devices-manager-font-end.vercel.app/](https://devices-manager-font-end.vercel.app/)
+
+Use the demo account below to explore the features.
+
+---
+
 ## 🔐 Demo Account
 
 You can use the following credentials to test the system:
 
-- **Username**: `user`
+- **Username**: `user`  
 - **Password**: `user12345678`
 
 ---
